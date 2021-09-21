@@ -1,13 +1,16 @@
 import React from 'react'
 import Style from './App.css'
-import PersonDetail from './components/PersonDetail'
+import Heading from './components/Heading';
+import PersonList from './components/PersonList';
+import ClearButton from './components/ClearButton'
 
 function App(){
   return(
-    <div className="white-card">
+    <div className="white-card" style={Style}>
       <div className="content-inside">
-          <p className="heading">5 birthdays today</p>
-          <PersonDetail />
+          <Heading />
+          <PersonList />
+          <ClearButton />
       </div> 
       
     </div>
