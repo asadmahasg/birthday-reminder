@@ -10,7 +10,7 @@ function Heading(){
     });
     return(
         <div>
-            <p className="heading">{count} birthdays today</p>
+            <p className="heading">{count>0?count:"No"} birthdays today</p>
         </div>
     )
 

@@ -5,7 +5,7 @@ import data from "../PersonData";
 
 function PersonList(){
 
-    const personData = data.map(person=><PersonDetail name={person.name} age={person.age + ' years'} />);
+    const personData = data.map(person=><PersonDetail id={person.id} name={person.name} age={person.age + ' years'} url={person.url}/>);
     
     return(
         <div>

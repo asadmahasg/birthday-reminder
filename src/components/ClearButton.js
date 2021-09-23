@@ -5,8 +5,10 @@ import data from "../PersonData";
 function ClearButton(){
     function BtnHandler(){
         data.forEach(element => {
-            console.log(element.name);
+            const index = data.indexOf(element);
+            data.splice(index,1);   
         });
+        // window.location.reload(false);
     }
     return(
         <div className="btn-div" style={Style}>

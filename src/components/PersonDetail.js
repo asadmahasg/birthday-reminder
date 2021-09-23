@@ -1,6 +1,5 @@
 import React from "react";
 import Style from '../App.css';
-import logo from '../Images/image2.jpeg'
 
 function PersonDetail(props){
   
@@ -8,7 +7,7 @@ function PersonDetail(props){
         <div className="person" style={Style}>
             <div className="row">
                 <div className="img-Div">
-                    <img src={logo} alt="" className="personImage"></img>
+                    <img src={props.url} alt="" className="personImage"></img>
                 </div>
                 <div className="details">
                     <h2 className="personName">{props.name}</h2>
