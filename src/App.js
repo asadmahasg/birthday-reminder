@@ -5,6 +5,7 @@ import PersonList from './components/PersonList';
 import ClearButton from './components/ClearButton'
 
 function App(){
+  
   return(
     <div className="white-card" style={Style}>
       <div className="content-inside">
