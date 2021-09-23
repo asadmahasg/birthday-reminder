@@ -3,6 +3,7 @@ import Style from '../App.css';
 import logo from '../Images/image2.jpeg'
 
 function PersonDetail(props){
+  
     return(
         <div className="person" style={Style}>
             <div className="row">
