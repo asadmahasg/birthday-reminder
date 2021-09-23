@@ -21,7 +21,7 @@ html{
 
 /* Person row styling */
 .person{
-  border-bottom: 0.25px lightgray solid;
+/*   border-bottom: 0.25px lightgray solid; */
   height: 100px;
 }
 .personImage{
