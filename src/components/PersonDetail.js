@@ -1,23 +1,25 @@
 import React from "react";
-import Style from '../App.css';
-import logo from '../Images/image2.jpeg'
+import PersonDetail from "./PersonDetail";
+import data from "../PersonData";
 
-function PersonDetail(props){
-  
+
+function PersonList(){
+
+    const personData = data.map(person=><PersonDetail name={person.name} age={person.age + ' years'} />);
+    console.log(personData);
+    
     return(
-        <div className="person" style={Style}>
-            <div className="row">
-                <div className="img-Div">
-                    <img src={logo} alt="" className="personImage"></img>
-                </div>
-                <div className="details">
-                    <h2 className="personName">{props.name}</h2>
-                    <p className="personAge">{props.age}</p>
-                </div>
-            </div>
-            
+        <div>
+            {/* <PersonDetail name="Alex Smith" age="29 years"/>
+            <PersonDetail name="Alena Linda" age="32 years"/>
+            <PersonDetail name="Stephen Hawken" age="19 years"/>
+            <PersonDetail name="Stephen Hawken" age="19 years"/>
+            <PersonDetail name="Stephen Hawken" age="19 years"/> */}
+
+            {personData};
             
         </div>
-    )
+    );
 }
-export default PersonDetail
+
+export default PersonList
