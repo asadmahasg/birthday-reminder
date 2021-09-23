@@ -8,8 +8,6 @@ function Heading(){
             count++;
         }
     });
-    
-
     return(
         <div>
             <p className="heading">{count} birthdays today</p>
